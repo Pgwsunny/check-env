@@ -24,9 +24,61 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz = new FizzBuzz();
         //when
         String result = fizzbuzz.say(3);
-
         //then
         assertEquals("Fizz", result);
     }
-
+    @Test
+    public void should_return_Buzz_given_5() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result = fizzbuzz.say(5);
+        //then
+        assertEquals("Buzz", result);
+    }
+    @Test
+    public void should_return_Whizz_given_7() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result = fizzbuzz.say(7);
+        //then
+        assertEquals("Whizz", result);
+    }
+    @Test
+    public void should_return_FizzBuzz_given_15() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result = fizzbuzz.say(15);
+        //then
+        assertEquals("FizzBuzz", result);
+    }
+    @Test
+    public void should_return_FizzWhizz_given_21() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result = fizzbuzz.say(21);
+        //then
+        assertEquals("FizzWhizz", result);
+    }
+    @Test
+    public void should_return_BuzzWhizz_given_35() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result = fizzbuzz.say(35);
+        //then
+        assertEquals("BuzzWhizz", result);
+    }
+   @Test
+    public void should_return_FizzBuzzWhizz_given_105() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result = fizzbuzz.say(105);
+        //then
+        assertEquals("FizzBuzzWhizz", result);
+    }
 }
