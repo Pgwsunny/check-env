@@ -35,7 +35,7 @@ public class MarsRover {
                 //return marslocation;
             }
             if (command.equals("R") ){
-                marslocation.setDirection("E");
+                marslocation.setDirection("N");
                 //return marslocation;
             }
         }
