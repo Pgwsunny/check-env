@@ -150,4 +150,18 @@ public class MarsRoverTest {
         assertEquals(0,marslocation.getY());
         assertEquals("W",marslocation.getDirection());
     }
+    @Test
+    public void should_return_10E_given_00EM() {
+        //given
+        MarsLocation marslocationinit = new MarsLocation(0,0,"E");
+        String command = "M";
+        //when
+        MarsRover marsrover= new MarsRover(marslocationinit);
+        MarsLocation marslocation = marsrover.receive(command);
+
+        //then
+        assertEquals(1,marslocation.getX());
+        assertEquals(0,marslocation.getY());
+        assertEquals("E",marslocation.getDirection());
+    }
 }
