@@ -5,8 +5,10 @@ public class MarsLocation {
     private int y;
     private String direction;
 
-    public MarsLocation(int x, int y, String n) {
-
+    public MarsLocation(int x, int y, String direction) {
+        this.x = x;
+        this.y = y;
+        this.direction = direction;
     }
 
 
