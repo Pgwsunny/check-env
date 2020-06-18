@@ -19,4 +19,17 @@ public class FizzBuzzTest {
 
 
     }
+    @Test
+    public void should_return_Fizz_given_3() {
+        //given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+        //when
+        String result =fizzbuzz.say(3);
+
+        //then
+        assertEquals("Fizz",result);
+
+
+    }
+
 }
