@@ -39,6 +39,20 @@ public class MarsRover {
                 //return marslocation;
             }
         }
+        if(marslocation.getDirection().equals("S")) {
+            if (command.equals("M")) {
+                marslocation.setY(marslocation.getY() - 1);
+                //return marslocation;
+            }
+            if (command.equals("L")) {
+                marslocation.setDirection("E");
+                //return marslocation;
+            }
+            if (command.equals("R")) {
+                marslocation.setDirection("N");
+                //return marslocation;
+            }
+        }
         return marslocation;
     }
 }
