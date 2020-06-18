@@ -49,7 +49,7 @@ public class MarsRover {
                 //return marslocation;
             }
             if (command.equals("R")) {
-                marslocation.setDirection("N");
+                marslocation.setDirection("W");
                 //return marslocation;
             }
         }
